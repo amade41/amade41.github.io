@@ -1,0 +1,31 @@
+{
+  "quotes": [
+    {
+      "id": "adams-universe",
+      "text": "In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.",
+      "author": "Douglas Adams",
+      "image": "/images/Douglas_Adams.jpg",
+      "source": "The Restaurant at the End of the Universe",
+      "tags": ["humor", "philosophy", "science-fiction"]
+    },
+
+    {
+      "id":"pratchett",
+      "text":"Some humans would do anything to see if it was possible to do it. If you put a large switch in some cave somewhere, with a sign on it saying 'End-of-the-World Switch. PLEASE DO NOT TOUCH', the paint wouldn't even have time to dry.",
+      "author":"Terry Pratchett",
+      "image":"/images/terry_pratchett.jpg",
+      "source":"Theif of Time",
+      "tags":["humor"]
+
+    },
+
+    {
+      "id":"adams-universe",
+      "text":"There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.There is another theory which states that this has already happened.",
+      "author":"Douglas Adams",
+      "image":"/images/Douglas_Adams.jpg",
+      "source":"The Restaurant at the End of the Universe",
+      "tags":["humor","philosophy","science-fiction"]
+    }
+  ]
+}

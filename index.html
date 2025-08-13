@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byron Kirk - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="cats">My Cats</a></li>
+                <li><a href="#" class="nav-link" data-page="tierlist">Tier Lists</a></li>
+                <li><a href="#" class="nav-link" data-page="quotes">Favorite Quotes</a></li>
+                <li><a href="#" class="nav-link" data-page="articles">Articles</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="glass-card">
+                <div class="hero-section">
+                    <!-- Profile image will be loaded dynamically -->
+                    <div id="profile-image-container">
+                        <div class="placeholder-image">📷</div>
+                    </div>
+                    
+                    <h1 id="profile-name">Loading...</h1>
+                    <p id="profile-title" class="subtitle">Loading...</p>
+                </div>
+
+                <div class="content-section">
+                    <div class="edit-prompt">
+                        👋 Hello! I am a Systems and Database Administrator with over 5 years of experience in Linux and Windows server environments, specializing in database operations, process automation, and performance optimization. 
+                        Proficient in SQL, Python, and system-level scripting, with a focus on translating complex data workflows into operational efficiency.
+                    </div>
+                    
+                    <h2>About Me</h2>
+                    <p id="profile-bio">Loading profile information...</p>
+
+                    <h2>Work Experience</h2>
+                    <div id="work-experience-container">
+                        Loading work experience...
+                    </div>
+
+                    <h2>Education</h2>
+                    <div id="education-container">
+                        Loading education information...
+                    </div>
+
+                    <h2>Skills & Expertise</h2>
+                    <div id="skills-container">
+                        Loading skills...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cats Page -->
+        <div id="cats" class="page">
+            <div class="glass-card">
+                <div class="hero-section">
+                    <h1>Meet My Cats</h1>
+                    <p class="subtitle">The real stars of the show</p>
+                </div>
+
+                <div class="cats-grid">
+                    <div class="cat-card">
+                        <!-- <div class="cat-placeholder">🐱</div> -->
+                        <img src="/images/Dora.jpg" alt="Cat Name" class="cat-image">
+                       
+                        <div class="Dora"></div>
+                        <div class="cat-description">Dora is a sweet and affection cat that will let you pet her all day long. She loves napping in her cat tower and sleeping in funny positions.
+                            She also loves carrying around fuzzy cat toys and meowing very loudly for some reason (maybe to signal she's caught the prey and it is time to celebrate). 
+                            She also loves trying to open cabinet doors and sneaking inside them to hide. She likes cuddling with you 
+                            at night even if that includes smothering your face with her entire body and purring very loudly. 
+                        </div>
+                    </div>
+
+                    <div class="cat-card">
+                        <!-- <div class="cat-placeholder">🐱</div> -->
+                        <img src="/images/Will.jpg" alt="Cat Name" class="cat-image">
+                       
+                        <div class="Will"></div>
+                        <div class="cat-description">Will is an agent of chaos but is also very affection when he's not running around terrorizing everyone in the household and begging for treats. 
+                            He loves playing fetch and will even bring the toy back to you about 50% of the time (the other 50% of the time he will give you a look that asks why aren't you throwing 
+                            my toy that is half way across the house). He loves pretending like he's Isaac Newton discovering gravity as he's fond of knocking small objects from great heights. 
+                            He also loves putting his toys in his water bowl and then dropping the wet toy on your head in the middle
+                            of the night. He's terrified of slippers/shoes and treats them as mysterious evil creatures that it's best to hide from. No one has stepped on his tail with a shoe so I am not
+                            sure the origin of this fear. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tier Lists Page -->
+        <div id="tierlist" class="page">
+            <div class="glass-card">
+                <div class="hero-section">
+                    <h1>My Tier Lists</h1>
+                </div>
+
+                <div class="tierlist-container">
+                    <div class="tierlist-title">Star Wars Films Tier List</div>
+                    <img src="/images/star_wars_tier_list.png" alt="Tier List 1" class="tierlist-image">
+                   
+                </div>
+
+                <div class="tierlist-container">
+                    <div class="tierlist-title">Marvel Movies Tier List</div>
+                    <img src="/images/marvel_movie_tier_list.png" alt="Tier List 2" class="tierlist-image">
+                   
+                </div>
+
+                <div class="tierlist-container">
+                    <div class="tierlist-title">FromSoft Games Tier List</div>
+                    <img src="/images/fromsoft_tier_list.png" alt="Tier List 3" class="tierlist-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Quotes Page -->
+        <div id="quotes" class="page">
+            <div class="glass-card">
+                <div class="hero-section">
+                <h1>Favorite Quotes</h1>
+                </div>
+                <div id="quotes-container">
+                <!-- Quotes will be loaded here dynamically -->
+                <div class="loading">Loading quotes...</div>
+                </div>
+            </div>
+        </div>
+        <!-- Articles Page -->
+        <div id="articles" class="page">
+            <div class="glass-card">
+                <!-- Main Articles List View -->
+                <div id="articles-main" class="articles-main">
+                    <div class="hero-section">
+                        <h1>My Articles</h1>
+                        <p class="subtitle">This is just a place for me to attempt to write articles for any insight that might help others</p>
+                    </div>
+
+                    <div id="articles-list" class="articles-list">
+                    </div>
+                </div>
+
+                <!-- Individual Article View Template -->
+                <div id="article-viewer" class="article-full">
+                    <button class="back-to-articles">← Back to Articles</button>
+                    <div class="article-header">
+                        <h1 id="article-viewer-title" class="article-full-title"></h1>
+                        <div id="article-viewer-date" class="article-full-date"></div>
+                    </div>
+                    <div id="article-viewer-content" class="article-content">
+                        <!-- Article content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+
+        <div id="contact" class="page">
+            <div class="glass-card">
+                <p class="subtitle">Feel free to shoot me an email if you'd like to get in touch!</p>
+                <div class="contact"><a href="mailto:byron.j.kirk@outlook.com">email: byron.j.kirk@outlook.com</a></div>
+            </div>
+   
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+  "name": "Byron Kirk",
+  "title": "Data Professional",
+  "profileImage": "./images/profile_pic.png",
+  "bio": "Welcome to my professional portfolio! I created this page because LinkedIn keeps restricting my account for some reason and I have never experienced a company that is more difficult to get a hold of someone than them. It's as if gremlins came up with the most convulted system imaginable as a joke and managers took it serioulsy. So when an application asks for a link to get to know a little more about me, this website is to serve that purpose. If I hit a roadblock I like to try and figure things out on my own. It is a good way to learn and I love trying to learn new things and help others.",
+  "workExperience": [
+    {
+      "position": "Team Lead of Database Administration Infrastructure",
+      "company": "Paycom Payroll, LLC",
+      "years": "2024 - 2025",
+      "responsibilities": [
+        "Led 8-member DBA team in 24/7 operations; tuned alerts to cut false positives by 50%, improving incident response.",
+    "Directed zero-downtime migration of 300+ clustered production databases from Windows to Linux, reducing cutover time by 75% via automation.",
+    "Implemented MySQL InnoDB ClusterSet for one of the most critical mobile application databases, enabling seamless high-availability failover with no service disruption.",
+    "Coordinated patching/upgrades for 2,000+ MySQL instances and 100+ Couchbase clusters under enterprise change controls, maintaining stability and security.",
+    "Established access management standards to reduce permission drift and enhance audit compliance.",
+    "Oversaw development of internal Access Management portal, centralizing user access tracking across environments.",
+    "Served as Level III escalation point, resolving complex database issues tied to enterprise releases with minimal downtime."
+      ]
+    },
+    {
+      "position": "Database Administrator I",
+      "company": "Paycom Payroll, LLC",
+      "years": "2022 - 2024",
+      "responsibilities": [
+      "Processed highest volume of JIRA access requests in 50-member DBA team, supporting 1,000+ developers with rapid turnaround.",
+    "Led deployment of 100+ critical databases in new Phoenix data center, validating infrastructure for future production expansion.",
+    "Developed and deployed Bash, PowerShell, and Python automation scripts, reducing manual workload and errors.",
+    "Completed four production-to-test refresh rotations independently, maintaining data integrity and uptime.",
+    "Migrated test databases from Windows to Linux, earning production responsibilities 6 months ahead of schedule.",
+    "Executed UTF8 collation migration in production with zero downtime, enabling expanded language support.",
+    "Provisioned 100+ PostgreSQL, MySQL, and Couchbase instances for high-availability enterprise applications."
+      ]
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Arts in Economics",
+    "degree2": "Bachelor of Business Administration in Accounting and Finance",
+    "institution": "University of Oklahoma",
+    "year": "2015",
+    "details": "Honor's College Graduate"
+  },
+
+  "skills": [
+    {
+      "category": "Databases",
+      "items": "MySQL (InnoDB Cluster, ClusterSets, Traditional Replication), PostgreSQL, SQL Server, Couchbase, MariaDB, ClickHouse"
+    },
+    {
+      "category": "Languages", 
+      "items": "Python, Shell (Bash), PowerShell, SQL, HTML, CSS, Javascript, VBA"
+    },
+    {
+      "category": "Monitoring & Performance",
+      "items": "Prometheus, Grafana, Splunk"
+    },
+    {
+      "category": "Technologies",
+      "items": "Linux, Ansible, GitLab, BuildMaster, Control-M, CyberArk, ElasticSearch, Confluence, JIRA, Microsoft Office"
+    }
+
+  ]
+}
