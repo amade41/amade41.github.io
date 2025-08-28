@@ -86,6 +86,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Simple markdown to HTML converter
     function markdownToHtml(markdown) {
         let html = markdown;
+
+        html = html.replace(/```(\w+)?\n([\s\S]*?)\n```/gim, function(match, lang, code) {
+            // Escape HTML in code blocks
+            const escapedCode = code
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+            return `<pre><code>${escapedCode}</code></pre>`;
+        });
         
         // Headers
         html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
@@ -187,18 +196,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Render the articles list
     function renderArticlesList() {
         const articlesList = document.getElementById('articles-list');
-        
-        const articlesHTML = articlesConfig.map(article => `
-            <div class="article-preview" data-article="${article.id}">
-                <div class="article-title">${article.title}</div>
-                <div class="article-date">${formatDate(article.date)}</div>
-                <div class="article-excerpt">${article.excerpt}</div>
-                <span class="read-more">Read more →</span>
-            </div>
-        `).join('');
+        const articlesHTML = articlesConfig.map((article, index) => {
+            const articleCard = `
+                <div class="article-preview" data-article="${article.id}">
+                    <div class="article-title">${article.title}</div>
+                    <div class="article-date">${formatDate(article.date)}</div>
+                    <div class="article-excerpt">${article.excerpt}</div>
+                    <span class="read-more">Read more →</span>
+                </div>`;
+            
+            // Add separator after each article except the last one
+            const separator = index < articlesConfig.length - 1 ? '<div class="article-separator"></div>' : '';
+            
+            return articleCard + separator;
+        }).join('');
         
         articlesList.innerHTML = articlesHTML;
-        
         // Add click listeners to the newly created article previews
         attachArticleListeners();
     }

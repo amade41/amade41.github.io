@@ -1,4 +1,14 @@
 [
+
+    {
+    "id": "article2",
+    "title": "I Love You, Linux, But You Make Me Question My Sanity",
+    "date": "2025-08-25",
+    "excerpt": "Why do I insist on trying to tinker with things that are not broken?",
+    "filename": "article2.md"
+
+  },
+
   {
     "id": "article1",
     "title": "Getting Back on Track After a Layoff",
